@@ -26,7 +26,7 @@ const BotonBuy = () => {
            });
           
            redirigirAWhatsApp(productos, precioTotal)
-           reiniciarLocal()
+           reiniciarLocal();
         }
 
   return (
