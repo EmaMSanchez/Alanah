@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 export function redirigirAWhatsApp(productos, precioTotal) {
     const mensaje = crearMensajeWhatsApp(productos, precioTotal);
-    const numeroTelefono = process.env.NEXT_PUBLIC_WAPNUMBER 
+    const numeroTelefono = "5492236047810"
      try {
     const urlWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
     window.location.href = urlWhatsApp;
