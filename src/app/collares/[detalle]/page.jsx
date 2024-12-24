@@ -37,7 +37,7 @@ const DetalleCollar = () => {
                 value={cantidad}
                 onChange={(e) => setCantidad(Number(e.target.value))}
                 className="w-16 mt-2 mb-10 md:my-4  text-center border rounded-md"/>
-        <div className="flex items-center justify-between my-2 md:my-0 gap-1 mr-[-15px] md:mr-0">
+        <div className="flex gap-4 md:gap-0 md:items-center md:justify-between md:my-2 ">
             <span className="text-2xl font-bold text-gray-900 ">${datos.precio}</span>
           <ButtonAddProduct disabled={cantidad < 1} datos={datos} cantidad={cantidad} resetCantidad={() => setCantidad(1)}/>
         </div>
