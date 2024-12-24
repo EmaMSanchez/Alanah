@@ -55,7 +55,7 @@ const Buy = () => {
                 <th scope="col" className="px-2 md:px-6 py-3">
                     Precio
                 </th>
-                <th scope="col" className="px-1 md:px-6 py-3">
+                <th scope="col" className="px-0 md:px-6 py-3">
                 
                 </th>
             </tr>
@@ -78,7 +78,7 @@ const Buy = () => {
                     <td className="px-2 md:px-6 py-4">
                         ${producto.precio * producto.cantidad}
                     </td>
-                    <th scope="col" className="px-1 md:px-6 py-3">
+                    <th scope="col" className="px-0 md:px-6 py-3">
                         <BotonDelete id={producto.id}/>
                     </th>
                 </tr>
