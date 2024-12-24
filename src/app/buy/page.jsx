@@ -43,19 +43,19 @@ const Buy = () => {
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
-                <th scope="col" className="px-4 md:px-6 py-3">
+                <th scope="col" className="px-3 md:px-6 py-3">
                     Imagen
                 </th>
                 <th scope="col" className="px-2 md:px-6 py-3">
                     Nombre del Producto
                 </th>
-                <th scope="col" className="px-2 md:px-6 py-3">
+                <th scope="col" className="px-1 md:px-6 py-3">
                     Cantidad
                 </th>
-                <th scope="col" className="px-2 md:px-6 py-3">
+                <th scope="col" className="px-1 md:px-6 py-3">
                     Precio
                 </th>
-                <th scope="col" className="px-2 md:px-6 py-3">
+                <th scope="col" className="px-1 md:px-6 py-3">
                 
                 </th>
             </tr>
@@ -64,21 +64,21 @@ const Buy = () => {
             {
                 productos.map((producto)=> (
                     <tr className="bg-white border-b" key={producto.id}>
-                    <td className="px-4 md:px-6 py-4">
+                    <td className="px-3 md:px-6 py-4">
                         <Image src={producto.imagen} width={70} height={70} alt='imagen' className='aspect-square'/>
                     </td>
                     <th scope="row" className="px-2 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                         Apple MacBook Pro 17"
                     </th>
-                    <td className="px-8 md:px-12 py-4">
+                    <td className="px-[27px] md:px-12 py-4">
                        
                         {producto.cantidad}
                        
                     </td>
-                    <td className="px-2 md:px-6 py-4">
+                    <td className="px-1 md:px-6 py-4">
                         ${producto.precio * producto.cantidad}
                     </td>
-                    <th scope="col" className="px-2 md:px-6 py-3">
+                    <th scope="col" className="px-1 md:px-6 py-3">
                         <BotonDelete id={producto.id}/>
                     </th>
                 </tr>
@@ -88,9 +88,9 @@ const Buy = () => {
         </tbody>
     </table>
 </div>
-<div className='container flex justify-between p-5'>
+<div className='container flex justify-between items-center p-5'>
  <BotonBuy/>
- <h3 className='text-[#966720a4] font-semibold'>Total: ${precio}</h3>
+ <h3 className='text-[#966720a4] font-semibold '>Total: ${precio}</h3>
 </div>
 </div>
   )
