@@ -47,8 +47,8 @@ export default function CarouselPlugin() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="ml-[10px] md:ml-0"/>
+      <CarouselNext className="mr-[10px] md:mr-0"/>
     </Carousel>
   );
 }
