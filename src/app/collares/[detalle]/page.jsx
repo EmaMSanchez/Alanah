@@ -18,7 +18,7 @@ const DetalleCollar = () => {
     const [cantidad, setCantidad] = useState(1);
     return (
         <div className="container grid grid-cols-2 gap-2  pt-8 md:gap-5 md:pt-0 md:m-8  md:w-full " >
-        <div className="container flex items-center justify-center ml-4 ml:m-0 md:m-8  ">
+        <div className="container flex items-center justify-center ml-3 ml:m-0 md:m-8  ">
          <Image
           isZoomed
           width={400}
@@ -37,7 +37,7 @@ const DetalleCollar = () => {
                 value={cantidad}
                 onChange={(e) => setCantidad(Number(e.target.value))}
                 className="w-16 mt-2 mb-10 md:my-4  text-center border rounded-md"/>
-        <div className="flex items-center justify-between mb-2 md:mb-0">
+        <div className="flex items-center justify-between my-2 md:my-0 gap-1 mr-[-15px] md:mr-0">
             <span className="text-2xl font-bold text-gray-900 ">${datos.precio}</span>
           <ButtonAddProduct disabled={cantidad < 1} datos={datos} cantidad={cantidad} resetCantidad={() => setCantidad(1)}/>
         </div>
