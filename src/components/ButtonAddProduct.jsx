@@ -18,7 +18,7 @@ const ButtonAddProduct = ({datos, cantidad, resetCantidad, disabled}) => {
  }
   return (
     
-    <Button disabled={disabled} className="text-white bg-[#966720a4] hover:bg-[#a3793aa4] font-medium rounded-lg text-sm mr-8 px-3 md:px-5 md:mr-0 py-2.5 text-center " variant="shadow" onClick={handleClickAddToCart}>
+    <Button disabled={disabled} className="text-white bg-[#966720a4] hover:bg-[#a3793aa4] font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center " variant="shadow" onClick={handleClickAddToCart}>
         Add to cart
     </Button>
   )

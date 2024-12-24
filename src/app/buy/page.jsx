@@ -88,7 +88,7 @@ const Buy = () => {
         </tbody>
     </table>
 </div>
-<div className='container flex justify-between items-center p-5'>
+<div className='flex justify-between items-center p-5'>
  <BotonBuy/>
  <h3 className='text-[#966720a4] font-semibold '>Total: ${precio}</h3>
 </div>
