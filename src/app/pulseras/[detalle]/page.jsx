@@ -36,8 +36,8 @@ const DetallPulsera = () => {
                 value={cantidad}
                 onChange={(e) => setCantidad(Number(e.target.value))}
                 className="w-16 mt-2 mb-10 md:my-4  text-center border rounded-md"/>
-        <div className="flex items-center justify-between mb-2 md:mb-0">
-            <span className="text-2xl font-bold text-gray-900 ">${datos.precio}</span>
+        <div className="flex gap-2  items-center relative ml-[-13px] md:ml-0 md:gap-0 md:justify-between md:my-2 ">
+            <span className="text-xl md:text-2xl font-bold text-gray-900 ">${datos.precio}</span>
           <ButtonAddProduct disabled={cantidad < 1} datos={datos} cantidad={cantidad} resetCantidad={() => setCantidad(1)}/>
         </div>
     </div>
