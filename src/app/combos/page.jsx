@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contacto = () => {
+const Combos = () => {
   return (
     <div className="container flex flex-col justify-center items-center md:ml-12 mt-3"> 
     <div className='m-7 border-2 rounded-md border-[#966720a4]'>
@@ -10,4 +10,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto
+export default Combos

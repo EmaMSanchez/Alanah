@@ -37,6 +37,11 @@ export default function BotonDrop({}) {
               Tobilleras
             </Link>
           </DropdownItem>
+          <DropdownItem textValue="Combos">
+            <Link href="/combos" passHref className={"/combos" == ruta ?  "text-[#f3bb72] font-bold" : "" }>
+              Combos
+            </Link>
+          </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

@@ -7,7 +7,7 @@ export default function Home() {
     <div className="container flex flex-col justify-center items-center md:ml-12 mt-3">
      <Carrousel/>
     <div className='m-7'>
-      Inicio
+    <h4 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r to-[#966720a4] from-[#f3dcb9a4]">Inicio</h4>
     </div>
     <div className='m-4 '>
       <BodyCards info={DATOCARDSINIT}/>
