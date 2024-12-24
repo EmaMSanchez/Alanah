@@ -2,35 +2,35 @@ export const DATOCARDSINIT = [
     {
         id: "1",
         url: "/collares",
-        nombre: "Mica",
-        precio : 5.400,
+        nombre: "Collar Estrellado",
+        precio: 5000,
         cantidad: 1,
         imagen: "/CarcollarEstrella.jpeg" 
         
     },
     {
-        id: "3",
+        id: "6",
         url: "/pulseras",
-        nombre: "Te amo",
-        precio : 2.300,
+        nombre: "pulsera1",
+        precio: 5000,
         cantidad: 1,
         imagen: "/Carcollar6.jpeg" 
         
     },
     {
-        id: "6",
+        id: "7",
         url: "/pulseras",
-        nombre: "mucho",
-        precio : 3000,
+        nombre: "pulsera2",
+        precio: 5000,
         cantidad: 1,
         imagen: "/Carcollar7.jpeg" 
         
     },
     {
-        id: "2",
-        url: "/tobilleras",
-        nombre: "mucho.",
-        precio : 4.100,
+        id: "15",
+         url: "/tobilleras",
+        nombre: "tobillera4",
+        precio: 5000,
         cantidad: 1,
         imagen: "/Carcollar3.jpeg" 
         
