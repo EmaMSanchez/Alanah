@@ -16,7 +16,7 @@ const DetallPulsera = () => {
         const datos = DATOCOPULSERAS.productos.find(data => data.id === id)
         const [cantidad, setCantidad] = useState(1);
         return (
-            <div className="container grid grid-cols-2 gap-2  pt-8 md:gap-5 2xl:flex 2xl:justify-center 2xl:gap-2 md:pt-0 md:m-8  md:w-full " >
+            <div className="container grid grid-cols-2 gap-2  pt-8 md:gap-5 2xl:ml-48 md:pt-0 md:m-8  md:w-full " >
             <div className="container flex items-center justify-center ml-4 ml:m-0 md:m-8 ">
              <Image
               isZoomed
