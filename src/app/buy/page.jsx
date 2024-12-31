@@ -38,7 +38,7 @@ const Buy = () => {
         )
      }
   return (
-    <div className='container mt-9'>
+    <div className='container mt-9 2xl:flex 2xl:justify-center 2xl:items-center'>
     <div className="relative overflow-x-auto">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
@@ -64,13 +64,13 @@ const Buy = () => {
             {
                 productos.map((producto)=> (
                     <tr className="bg-white border-b" key={producto.id}>
-                    <td className="px-[6px] md:px-6 py-4">
+                    <td className="px-[6px] md:px-6 2xl:px-12 py-4">
                         <Image src={producto.imagen} width={70} height={70} alt='imagen' className='aspect-square'/>
                     </td>
-                    <th scope="row" className="px-[6px] md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    <th scope="row" className="px-[6px] md:px-6 2xl:px-12 py-4 font-medium text-gray-900 whitespace-nowrap">
                         Apple MacBook Pro 17"
                     </th>
-                    <td className="px-[32px] md:px-12 2xl:px-24 py-4">
+                    <td className="px-[32px] md:px-12 2xl:px-16 py-4">
                        
                         {producto.cantidad}
                        

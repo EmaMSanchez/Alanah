@@ -17,7 +17,7 @@ const DetalleCollar = () => {
     const datos = DATOCOLLARES.productos.find(data => data.id === id)
     const [cantidad, setCantidad] = useState(1);
     return (
-        <div className="container grid grid-cols-2 gap-2  pt-8 md:gap-5 md:pt-0 md:m-8 2xl:ml-48 2xl:gap-[-80px] md:w-full " >
+        <div className="container grid grid-cols-2 gap-2  pt-8 md:gap-5 md:pt-0 md:m-8 2xl:ml-48 2xl:gap-0 md:w-full " >
         <div className="container flex items-center justify-center ml-3 ml:m-0 md:m-8  ">
          <Image
           isZoomed
