@@ -38,8 +38,8 @@ const Buy = () => {
         )
      }
   return (
-    <div className='container mt-9 2xl:flex 2xl:justify-center 2xl:items-center'>
-    <div className="relative overflow-x-auto">
+    <div className='container mt-9'>
+    <div className="relative overflow-x-auto 2xl:flex 2xl:justify-center 2xl:items-center">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
@@ -70,7 +70,7 @@ const Buy = () => {
                     <th scope="row" className="px-[6px] md:px-6 2xl:px-12 py-4 font-medium text-gray-900 whitespace-nowrap">
                         Apple MacBook Pro 17"
                     </th>
-                    <td className="px-[32px] md:px-12 2xl:px-16 py-4">
+                    <td className="px-[32px] md:px-12 2xl:px-20 py-4">
                        
                         {producto.cantidad}
                        
