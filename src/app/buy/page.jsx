@@ -43,19 +43,19 @@ const Buy = () => {
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
-                <th scope="col" className="px-[6px] md:px-6 py-3">
+                <th scope="col" className="px-[6px] md:px-6 2xl:px-12 py-3">
                     Imagen
                 </th>
-                <th scope="col" className="px-[6px] md:px-6 py-3">
+                <th scope="col" className="px-[6px] md:px-6 2xl:px-12 py-3">
                     Nombre del Producto
                 </th>
-                <th scope="col" className="px-[6px] md:px-6 py-3">
+                <th scope="col" className="px-[6px] md:px-6 2xl:px-12 py-3">
                     Cantidad
                 </th>
-                <th scope="col" className="px-[6px] md:px-6 py-3">
+                <th scope="col" className="px-[6px] md:px-6 2xl:px-12 py-3">
                     Precio
                 </th>
-                <th scope="col" className="px-1 md:px-6 py-3">
+                <th scope="col" className="px-1 md:px-6 2xl:px-12 py-3">
                 
                 </th>
             </tr>
@@ -70,15 +70,15 @@ const Buy = () => {
                     <th scope="row" className="px-[6px] md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                         Apple MacBook Pro 17"
                     </th>
-                    <td className="px-[32px] md:px-12 py-4">
+                    <td className="px-[32px] md:px-12 2xl:px-24 py-4">
                        
                         {producto.cantidad}
                        
                     </td>
-                    <td className="px-[6px] md:px-6 py-4">
+                    <td className="px-[6px] md:px-6 2xl:px-12 py-4">
                         ${producto.precio * producto.cantidad}
                     </td>
-                    <th scope="col" className="px-1 md:px-6 py-3">
+                    <th scope="col" className="px-1 md:px-6 2xl:px-12 py-3">
                         <BotonDelete id={producto.id}/>
                     </th>
                 </tr>
