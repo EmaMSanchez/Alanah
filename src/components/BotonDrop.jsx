@@ -11,9 +11,10 @@ export default function BotonDrop({}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const router = useRouter()
-
+  
   const handleRedirect = (ruta) =>{
     router.push(ruta)
+    setIsOpen(false);
   }
 
   return (
