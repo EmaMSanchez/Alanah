@@ -1,7 +1,6 @@
 "use client"
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function BotonDrop({}) {
@@ -11,36 +10,33 @@ export default function BotonDrop({}) {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const router = useRouter()
+
+  const handleRedirect = (ruta) =>{
+    router.push(ruta)
+  }
 
   return (
     <Dropdown onOpenChange={setIsOpen}> 
       <DropdownTrigger>
         <Button
-          className={`bg-transparent border-0 text-foreground text-medium ml-[-16.5px] md:ml-0 ${isOpen ? "text-[#f3bb72] font-bold" : "" || rSelected ? "text-[#f3bb72] font-bold" : "" }`}
+          className={`bg-transparent border-0 text-foreground text-medium ml-[-16.5px] md:ml-0 ${isOpen ? "text-[#f3bb72] font-bold mr-[-7.2px]" : "" || rSelected ? "text-[#f3bb72] font-bold mr-[-7.2px]" : "" }`}
         >
           Productos
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Productos menu">
-          <DropdownItem textValue="Collares">
-            <Link href="/collares" passHref className={"/collares" == ruta ?  "text-[#f3bb72] font-bold" : "" }>
+          <DropdownItem textValue="Collares" className={"/collares" == ruta ?  "text-[#f3bb72] font-bold" : "" } onClick={() => handleRedirect("/collares")}>
              Collares
-            </Link>
           </DropdownItem>
-          <DropdownItem textValue="Pulseras">
-            <Link href="/pulseras" passHref className={"/pulseras" == ruta ?  "text-[#f3bb72] font-bold" : "" }>
+          <DropdownItem textValue="Pulseras" className={"/pulseras" == ruta ?  "text-[#f3bb72] font-bold" : "" } onClick={() => handleRedirect("/pulseras")}>
              Pulseras
-            </Link>
           </DropdownItem>
-          <DropdownItem textValue="Tobilleras">
-            <Link href="/tobilleras" passHref className={"/tobilleras" == ruta ?  "text-[#f3bb72] font-bold" : "" }>
+          <DropdownItem textValue="Tobilleras" className={"/tobilleras" == ruta ?  "text-[#f3bb72] font-bold" : "" } onClick={() => handleRedirect("/tobilleras")}>
               Tobilleras
-            </Link>
           </DropdownItem>
-          <DropdownItem textValue="Combos">
-            <Link href="/combos" passHref className={"/combos" == ruta ?  "text-[#f3bb72] font-bold" : "" }>
+          <DropdownItem textValue="Combos" className={"/combos" == ruta ?  "text-[#f3bb72] font-bold" : "" } onClick={() => handleRedirect("/combos")}>
               Combos
-            </Link>
           </DropdownItem>
       </DropdownMenu>
     </Dropdown>

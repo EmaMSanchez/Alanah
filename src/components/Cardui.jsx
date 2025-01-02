@@ -7,7 +7,7 @@ export default function Cardui({dato}) {
     <Card
       isFooterBlurred
       radius="lg"
-      className="border-none"
+      className="border-none shadow-lg"
     >
       <Image
   alt="Woman listening to music"

@@ -23,7 +23,7 @@ export default function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-xs md:max-w-3xl rounded-md md:mt-10"
+      className="w-full max-w-xs md:max-w-3xl rounded-md md:mt-10 shadow-lg"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
