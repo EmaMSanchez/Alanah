@@ -10,9 +10,9 @@ import CartNav from "./CartNav";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   const ruta = usePathname();
-
+  
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>

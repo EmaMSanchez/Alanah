@@ -1,6 +1,6 @@
 "use client"
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function BotonDrop({}) {
@@ -10,11 +10,9 @@ export default function BotonDrop({}) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const router = useRouter()
   
   const handleRedirect = (ruta) =>{
-    router.push(ruta)
-    setIsOpen(false);
+    window.location.href = ruta
   }
 
   return (
