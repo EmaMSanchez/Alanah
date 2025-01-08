@@ -6,9 +6,7 @@ export const useCartStore = create(
         addProduct: (producto, cantidad) =>
             set((state) => {
               // Busca si el producto ya existe
-              const existingProduct = state.productos.find((p) => p.id === producto.id);
-    
-              if (existingProduct) {
+              if (state.productos.some((p) => p.id === producto.id)) {
                 // Si ya existe, actualiza su cantidad
                 return {
                   productos: state.productos.map((p) =>
@@ -25,15 +23,19 @@ export const useCartStore = create(
                 };
               }
             }),
+            
         deleteProduct: (id) =>
             set((state) => ({
               productos: state.productos.filter((producto) => producto.id !== id),
             })),
+
             deleteAllProduct: () =>
                 set(() => ({
                   productos: [],
                 })),
+
         getProductos: () => get().productos.length,
+
         getPrecio: () => get().productos.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0)
     }), 
     {

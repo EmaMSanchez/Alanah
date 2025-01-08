@@ -1,6 +1,7 @@
 import Carrousel from '@/components/Carrousel'
 import BodyCards from '@/components/BodyCards';
 import { DATOCARDSINIT } from '@/mock/datoInit'
+
 export default function Home() {
 
   return (
